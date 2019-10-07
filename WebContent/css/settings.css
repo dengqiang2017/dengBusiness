@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+.imgFile {
+	margin-top: 5px;
+	width: 245px;
+	height: 30px;
+	margin-left: -252px;
+	float: inherit;
+	opacity: 0;
+	filter:Alpha(Opacity=1);
+	border: 1px solid #000;
+	display: inline-block;
+	cursor: default;
+}
+.imgFileInp {
+	height: 28px;
+	width: 160px;
+	padding-left: 5px;
+	float: inherit;
+	margin-top: 5px;
+/* 	font: 14px/25px "宋体", Verdana, Geneva, sans-serif; */
+	border: 1px solid #959595;
+}
+.imgFileA:hover {
+	opacity: 0.7;
+	filter:Alpha(Opacity=70);
+	cursor: pointer;
+}
+.imgFileA {
+	display: inline-block;
+	height: 26px;
+	width: 70px;
+	text-decoration: none;
+	/* border:1px solid #000;  */
+/* 	margin-top: 5px; */
+/* 	margin-left: 5px; */
+	text-align: center;
+	color: #fff;
+	float: inherit;
+	background-color: #128ea0;
+	line-height: -moz-block-height;
+/* 	font: 16px/30px "微软雅黑", Verdana, Geneva, sans-serif; */
+}

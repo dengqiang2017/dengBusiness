@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+.align-center {
+	position: fixed;
+	left: 40%;
+	top: 8%;
+	margin-left: width/2;
+	margin-top: height/2;
+	background: rgba(67, 167, 233, 0.30);
+	width: 550px;
+	height: 650px;
+	border-radius: 10px;
+}
+
+.ulRegister {
+	list-style-type: none;
+	float: left;
+	margin-top: 30px;
+	line-height: 40px;
+	color: rgb(182, 241, 249);
+	font-weight: bolder;
+}
+
+.titlename {
+	text-align: center;
+	color: rgb(182, 241, 249);
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.msg {
+	color: red;
+	font-weight: normal;
+}
+input{
+width: 225px;
+font-size: 16px;
+}

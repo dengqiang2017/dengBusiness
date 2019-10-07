@@ -1,0 +1,271 @@
+/*! jQuery UI - v1.10.3 - 2013-05-03
+* http://jqueryui.com
+* Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=cccccc&bgTextureHeader=highlight_soft&bgImgOpacityHeader=75&borderColorHeader=aaaaaa&fcHeader=222222&iconColorHeader=222222&bgColorContent=ffffff&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=e6e6e6&bgTextureDefault=glass&bgImgOpacityDefault=75&borderColorDefault=d3d3d3&fcDefault=555555&iconColorDefault=888888&bgColorHover=dadada&bgTextureHover=glass&bgImgOpacityHover=75&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=aaaaaa&fcActive=212121&iconColorActive=454545&bgColorHighlight=fbf9ee&bgTextureHighlight=glass&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
+* Copyright 2013 jQuery Foundation and other contributors Licensed MIT */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-clearfix:before,.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+
+.ui-helper-clearfix:after {
+	clear: both;
+}
+
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter: Alpha(Opacity = 0);
+}
+
+.ui-front {
+	z-index: 1020;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+#msk #dynContent .elementList {
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px solid #DDD;
+}
+
+#msk #dynContent .elementList.selected {
+	background: #eaeaea;
+}
+
+#msk #dynContent .elementList .eleName {
+	width: 265px;
+	text-indent: 5px;
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+#msk #dynContent .elementList .selectImg {
+	display: inline-block;
+}
+
+#msk #dynContent .selected .selectImg {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin-top: 2px;
+	background: url("../images/selected.png");
+}
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1010;
+}
+
+.ui-dialog {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	border-radius: 5px 5px 0 0;
+	padding: .8em .5em;
+	position: relative;
+	line-height: 20px;
+	font-weight: bold;
+	padding: 10px 10px;
+	color: #555;
+	text-shadow: 0 1px 0 #fff;
+	display: block;
+	background-color: #eaeaea;
+	background-image: -moz-linear-gradient(#fafafa, #eaeaea);
+	background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+	background-image: linear-gradient(#fafafa, #eaeaea);
+	background-repeat: repeat-x;
+}
+
+.ui-dialog .ui-dialog-title {
+	float: left;
+	white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 16px;
+	text-align: center;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+	display: none;
+}
+
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	background: none;
+	overflow: auto;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin-top: .2em;
+	padding: .2em 1em .5em .4em;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	text-align: center;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+}
+
+.ui-dialog .ui-resizable-se {
+	width: 12px;
+	height: 12px;
+	right: -5px;
+	bottom: -5px;
+	background-position: 16px 16px;
+}
+
+.ui-draggable .ui-dialog-titlebar {
+	cursor: move;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget-content {
+/* 	background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% */
+/* 		repeat-x; */
+	border-radius: 3px;
+	background: url("images/ui-bg_inset-hard_100_fcfdfd_1x100.png") repeat-x scroll 50% bottom #fcfdfd;
+    border: 1px solid #a6c9e2;
+    color: #222222;
+}
+
+.ui-widget-header {
+	border-bottom: 1px solid #cacaca;
+/* 	background: #cccccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) */
+/* 		50% 50% repeat-x; */
+	color: #222222;
+	font-weight: bold;
+}
+
+.ui-widget-header a {
+	color: #222222;
+}
+
+/* Overlays */
+.ui-widget-overlay {
+	background: #000;
+	opacity: .3;
+	filter: Alpha(Opacity = 30);
+}
+
+.ui-widget-shadow {
+	margin: -8px 0 0 -8px;
+	padding: 8px;
+	background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50%
+		repeat-x;
+	opacity: .3;
+	filter: Alpha(Opacity = 30);
+	border-radius: 8px;
+}
+/* datepicker */
+.ui-datepicker {
+	border: 1px solid #999;
+}
+
+.ui-datepicker .ui-datepicker-calendar tr td {
+	background: #f0f0f0;
+	border: 1px solid #d3d3d3;
+	padding: 3px;
+}
+
+.ui-datepicker .ui-datepicker-calendar tr td:hover{
+	border:1px solid #999;
+	background: #e0e0e0;
+}
+
+.ui-datepicker .ui-datepicker-calendar tr td a {
+	color: #666;
+}
+
+.ui-datepicker-prev {
+	position: absolute;
+	top: 4px;
+	width: 16px;
+	height: 16px;
+	left: 4px;
+	background:url(../images/ui-icons.png) -80px -192px no-repeat;
+}
+
+.ui-datepicker-next {
+	position: absolute;
+	top: 4px;
+	width: 16px;
+	height: 16px;
+	right: 4px;
+	background:url(../images/ui-icons.png) -48px -192px no-repeat;
+}
+
+.ui-datepicker .ui-datepicker-calendar tr td.ui-state-disabled {
+	border: none;
+	background: none;
+}
+
+.ui-datepicker .ui-datepicker-calendar tr td.ui-datepicker-today {
+	border: 1px solid #fcefa1;
+	background: #fff;
+}
+
+.ui-datepicker .ui-datepicker-calendar tr td.ui-datepicker-today a {
+	color: #333;
+}
+
+.ui-datepicker .ui-datepicker-calendar tr td.ui-datepicker-current-day {
+	background: #fff;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}

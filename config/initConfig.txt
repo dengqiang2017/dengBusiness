@@ -1,0 +1,5 @@
+#system
+#Mon Jan 26 15:30:08 CST 2015
+systemName=\u623F\u5C4B\u7BA1\u7406\u7CFB\u7EDF
+logoUrl=/images/logo.png
+textWatermark=\u623F\u5C4B\u4E13\u7528

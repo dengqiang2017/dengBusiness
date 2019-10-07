@@ -1,0 +1,269 @@
+/*本模板是由标准之路(www.aa25.cn)的×××制作完成*/
+/*本人水平有限，使用自愿，不对因使用此模板造成的任何后果负任何责任*/
+/*如果您想转载此资源，请保留“<a href="http://www.aa25.cn">标准之路www.aa25.cn</a>”的链接及版权标识*/
+/*如有更好的建议或意见，请到www.aa25.cn留言，本人尽力解决*/
+/*2008-8-28*/
+body {
+	font-family: caption;
+	font-size: 12px;
+	margin: 0;
+	background-image: url('/images/bjin.jpg');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	margin: auto;
+	filter:
+		"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+#container {
+	margin: 0 auto;
+/* 	width: 1200px; */
+	top: 0px;
+	bottom: 0px;
+	background-color: rgb(62, 103, 149);
+}
+
+#header {
+	height: 100px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #7bb2a7;
+}
+
+#menu {
+	height: 30px;
+	margin-bottom: 5px;
+	display: none;
+}
+
+#mainContent {
+	/* 	margin-bottom: 5px; */
+	
+}
+
+#sidebar {
+	float: left;
+	width: 200px;
+	border-bottom: 1px solid #7bb2a7;
+	border-right: 1px solid #7bb2a7;
+	margin-left: 0px;
+	/* 	margin-top: 0px; */
+	background-color: white;
+}
+
+#content {
+	margin-left: 200px !important;
+	margin-left: 202px;
+	height: auto !important;
+	height: 100px;
+	background-color: white;
+	margin-right: 1px;
+}
+/*当content设定高度后，3像素会跑到content外侧，这样，我们用!important修正在ie下向左多浮动2像素，加上3像素的bug正好是5像素，所以在火狐和IE下显示是一样的*/
+#footer {
+	height: 60px;
+	border-top: 1px solid #7bb2a7;
+	text-align: center;
+	line-height: -moz-block-height;
+}
+
+.clearfloat {
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.imgUp {
+	float: right;
+	margin-right: 10px;
+	margin-top: 13px;
+	height: 8px;
+	width: 13px;
+}
+
+.imgRight {
+	float: right;
+	margin-top: 10px;
+	height: 15px;
+	margin-right: 10px;
+}
+
+.divMenu {
+	background-color: white;
+	text-align: center;
+	cursor: pointer;
+	height: 35px;
+	line-height: 32px;
+	border-bottom: 1px solid thistle;
+	color: blueviolet;
+}
+
+.divMenu:hover {
+	background-color: #a8c0db;
+	text-align: center;
+	cursor: pointer;
+	height: 35px;
+	line-height: 32px;
+	border-bottom: 1px solid thistle;
+	color: blueviolet;
+}
+
+.divTitle {
+	/* 	background-color: #4c7db5; */
+	width: 100%;
+	height: auto;
+	min-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	line-height: 35px;
+	color: white;
+	font-weight: bolder;
+	/* 	margin-left: 1px; */
+	/* 	margin-right: 1px;	 */
+	background-image: url("/images/title.png");
+}
+
+.items {
+	display: none;
+}
+
+.linear {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(left, gradientType=1,
+		startColorStr=#5191ad, endColorStr=#62a474); /*IE 6 7 8*/
+	background: -ms-linear-gradient(left, #5191ad, #62a474); /* IE 10 */
+	/* 	background: -moz-linear-gradient(left, #4c7db5, #62a474); 火狐 */
+	background-image: url("/images/title.png"); /*火狐*/
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5191ad),
+		to(#62a474)); /*谷歌*/
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5191ad),
+		to(#62a474)); /* Safari 4-5, Chrome 1-9*/
+	background: -webkit-linear-gradient(left, #5191ad, #62a474);
+	/*Safari5.1 Chrome 10+*/
+	background: -o-linear-gradient(left, #5191ad, #62a474);
+	/*Opera 11.10+*/
+	filter:
+		"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+[data-num] {
+	width: 80px;
+}
+
+.orange:hover {
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11),
+		to(#f06015));
+	background: -moz-linear-gradient(top, #f88e11, #f06015);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11',
+		endColorstr='#f06015');
+}
+
+.orange {
+	width: 65px;
+	height: 27px;
+	color: #fef4e9;
+	font-weight: bolder;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	cursor: pointer;
+	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a),
+		to(#f47a20));
+	background: -moz-linear-gradient(top, #faa51a, #f47a20);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a',
+		endColorstr='#f47a20');
+}
+
+.blue {
+	color: #d9eef7;
+	border: solid 1px #0076a3;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee),
+		to(#0078a5));
+	background: -moz-linear-gradient(top, #00adee, #0078a5);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee',
+		endColorstr='#0078a5');
+}
+
+.blue:hover {
+	background: #007ead;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc),
+		to(#00678e));
+	background: -moz-linear-gradient(top, #0095cc, #00678e);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc',
+		endColorstr='#00678e');
+}
+
+.abtn {
+	text-decoration: none;
+	color: #505050;
+	color: #FFF;
+	text-align: center;
+	display: inline-block;
+	width: 65px;
+	height: 20px;
+	background-color: #00adee;
+	text-align: center;
+	padding-top: 2px;
+	line-height: -moz-block-height;
+}
+
+.abtn:hover {
+	background: #007ead;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc),
+		to(#00678e));
+	background: -moz-linear-gradient(top, #0095cc, #00678e);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc',
+		endColorstr='#00678e');
+}
+
+.mainTitle {
+	height: 25px;
+	margin-left: 10px;
+	padding-top: 10px;
+}
+
+select {
+	min-width: 100px;
+	height: 26px;
+	font: 12px/26px "微软雅黑", Verdana, Geneva, sans-serif;
+}
+
+.divListTitle {
+	background-image: url('/images/grid_title_bg.png');
+	height: 30px;
+	text-align: center;
+	line-height: -moz-block-height;
+	text-align: center;
+	font-weight: bold;
+}
+
+.divPopUpBoxEdit {
+	display: none;
+/* 	height: 200px; */
+/* 	width: 300px; */
+	line-height: 30px;
+	border: solid rgb(166, 201, 226) 1px;
+	position: fixed;
+	left: 38%;
+	top: 25%;
+	background: #fff;
+	z-index: 99999999;
+}
+
+.divZhezhao {
+	position: fixed;
+	z-index: 9991;
+	width: 100%;
+	height: 100%;
+	background-color: silver;
+	display: none;
+	opacity: .5;
+	filter: Alpha(Opacity = 50);
+	top: 0px;
+	left: 0
+}

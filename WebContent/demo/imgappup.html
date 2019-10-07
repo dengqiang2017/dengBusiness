@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<script type="text/javascript" src="/js_lib/jquery.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script src="/js/ajaxfileupload.js" type="text/javascript"></script>
+<!-- <script type="text/javascript" src="cordova.js"></script> -->
+<script type="text/javascript">
+$(function(){
+// document.addEventListener("deviceready",onDeviceReady,false);
+// functon onDeviceReady(){
+// 	navigator.camera.getPicture(uploadPhoto,function(message){
+// 		alert('get picture failed');
+// 	},{quality:50,destinationType:navigator.camera.DestinationType.FILE_URI,
+// 		sourceType:navigator.camera.PictureSourceType.PHTOTLIBRARY});
+// }
+// function uploadPhoto(imageURI){
+// 	var options=new FileUploadOptions();
+// 	//表单元素值
+// 	options.fileKey="imgFile";
+// 	//文件在服务器中保存所使用的名称
+// 	options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
+// 	options.mimeType="image/jpeg";
+// 	var params={};
+// 	params.value1="test";
+// 	params.value2="param";
+// 	options.params=params;
+// 	ft.upload(imageURI,encodeURI("http://192/168.0.116/upload/uploadImage.do"),win,fail,opptions);
+// 	function win(r){
+// 		alert("上传成功");
+// 	}
+// 	function fail(error){
+// 		alert("图片上传失败");
+// 	}
+// }
+});
+</script>
+</head>
+<body>
+ <h3 class="ui-bar ui-bar-a">Heading</h3>
+      <div class="ui-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan blandit fermentum. Pellentesque cursus mauris purus, auctor commodo mi ullamcorper nec. Donec semper mattis eros, nec condimentum ante sollicitudin quis. Etiam orci sem, porttitor ut tellus nec, blandit posuere urna. Proin a arcu non lacus pretium faucibus. Aliquam sed est porttitor, ullamcorper urna nec, vehicula lorem. Cras porttitor est lorem, non venenatis diam convallis congue.</p>
+      </div>
+<form>
+    <input id="filter-for-listview" data-type="search" placeholder="Type to search...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-input="#filter-for-listview">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Ferrari</a></li>
+</ul>
+</body>
+</html>

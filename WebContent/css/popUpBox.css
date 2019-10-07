@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+.tanchukuangN{
+	height:57px;
+	width:340px;
+	/* border:1px solid #ccc; */
+	margin:0 auto;
+}
+.tanchukuangNts{
+	display:inline-block;
+	font:18px/25px "微软雅黑",Verdana, Geneva, sans-serif;
+	font-weight:500;
+	width:88px;
+	margin:auto;
+	margin-left:10px;
+	margin-top:3px;
+	float:left;
+	}
+.tckHr{
+	height:1px;
+	width:268px;
+	margin:0 auto;
+}
+.tckStext{
+	float:right;
+	height:25px;
+	width:175px;
+	margin-left: 10px;
+	margin-top:10px;
+	border:1px solid #22adec;
+}
+.tckButS{
+	background:url(../images/tcksearch.png) no-repeat center center;
+	display:inline-block;
+	height:25px;
+	width:30px;
+	margin-top:10px;
+	border:1px solid #22adec;
+	border-left:none;
+	float:right;
+	cursor: pointer;
+	margin-right: 10px;
+}
+.tckButS{
+	opacity:0.7;
+	filter:Alpha(Opacity=70);
+}
+.anniuGb{
+	/* border:1px solid #000; */
+	display:inline-block;
+	width:25px;
+	height:40px;
+	margin-top:-40px;
+	float:right;
+	cursor:pointer;
+	background:url(../images/close.png) no-repeat center left;
+}
+.anniuGb:hover{
+/* 	background:url(../images/anniu1.png) no-repeat center left; */
+}
+.tanchukuangND{
+	height:60px;
+	width:268px;
+	margin:0 auto;
+	text-align:center;
+	font:13px/30px "微软雅黑",Verdana, Geneva, sans-serif;
+	/* border:1px solid #000; */
+}
+.tanchukuangNDN{
+	height:30px;
+	width:268px;
+	margin:0 auto;
+	/* border:1px solid #000; */
+}
+.tanchukuangNDN a{
+	display:inline-block;
+	height:25px;
+	width:80px;
+	background:#fff;
+	color:#333333;
+	text-align:center;
+	letter-spacing:4px;
+	font:18px/25px "微软雅黑",Verdana, Geneva, sans-serif;
+	border:1px solid #ccc;
+	float:right;
+	margin-top:2px;
+	cursor:pointer;
+}
+.tanchukuangNDN a:hover{
+	background:#fc6411;
+}
+.tanchukuangNDx{
+	max-height:350px;
+	 min-height:100px; 
+	width:325px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	font:13px/30px "微软雅黑",Verdana, Geneva, sans-serif;
+	 border:1px solid #ccc;
+	  overflow-y:scroll;
+}
+.tanchukuangNDx img{
+	max-height:260px;
+	width:268px;
+	margin:0 auto;
+	font:13px/30px "微软雅黑",Verdana, Geneva, sans-serif;
+	/*  border:1px solid #000;  */
+}
+
+.tanchukuangNxx{
+	height:57px;
+	width:340px;
+	/* border:1px solid #ccc; */
+	margin:0 auto;
+}
+.tanchukuangNxx span{
+	display:inline-block;
+	font:20px/25px "微软雅黑",Verdana, Geneva, sans-serif;
+	font-weight:500;
+		width:268px;
+		margin:0 auto;
+		/* border:1px solid #000; */
+	margin-top:15px;
+	margin-left:40px;
+	}
+.tanchukuangload{	
+	display: inline-block;
+    font: 500 13px/25px "微软雅黑",Verdana,Geneva,sans-serif;
+    margin-top: inherit;
+    text-align: center;
+    width: 268px;
+	}
+.tckHrxx{
+	height:1px;
+	width:268px;
+	margin:0 auto;
+}
+.anniuGbxx{
+	/* border:1px solid #000; */
+	display:inline-block;
+	width:40px;
+	height:40px;
+	margin-top:-40px;
+	float:right;
+	cursor:pointer;
+	background:url(../images/anniu.png) no-repeat center left;
+}
+.anniuGbxx:hover{
+	background:url(../images/anniu1.png) no-repeat center left;
+}
+.tanchukuangNDxx{
+	height:60px;
+	width:268px;
+	margin:0 auto;
+	text-align:center;
+	font:13px/30px "微软雅黑",Verdana, Geneva, sans-serif;
+	/* border:1px solid #000; */
+}
+.tanchukuangNDNxx{
+	height:30px;
+	width:268px;
+	margin:0 auto;
+	/* border:1px solid #000; */
+}
+.tanchukuangNDNxx a{
+	display:inline-block;
+	height:25px;
+	width:80px;
+	background:#999;
+	color:#fff;
+	text-align:center;
+	letter-spacing:4px;
+	font:18px/25px "微软雅黑",Verdana, Geneva, sans-serif;
+	border:1px solid #ccc;
+	float:right;
+	margin-top:2px;
+	cursor:pointer;
+}
+.tanchukuangNDNxx a:hover{
+	background:#fc6411;
+}
+
+
+
+.tanchukuangNxximg{
+	min-height:57px;
+	min-width:340px;
+	border:1px solid #ccc; 
+	margin:0 auto;
+	padding: 10px;
+	clear: both; 
+}
+.tanchukuangNxximg span{
+	display:inline-block;
+	font:20px/25px "微软雅黑",Verdana, Geneva, sans-serif;
+	font-weight:500;
+		width:268px;
+		margin:0 auto;
+	/*  border:1px solid #000;  */
+	margin-top:15px;
+	margin-left:40px;
+	}
+.tckHrxximg{
+	height:1px;
+	min-width:468px;
+	margin:0 auto;
+}
+.anniuGbxximg{
+	/*   border:1px solid #000;   */
+	display:inline-block;
+	width:40px;
+	height:40px;
+	float:right;
+	cursor:pointer;
+	background:url(../images/anniu.png) no-repeat center left;
+}
+.anniuGbxximg:hover{
+	background:url(../images/anniu1.png) no-repeat center left;
+}
+.tanchukuangNDxximg{
+	min-height:60px;
+	min-width:268px;
+	margin:0 auto;
+	text-align:center;
+	font:13px/30px "微软雅黑",Verdana, Geneva, sans-serif;
+	/* border:1px solid #000; */
+	clear: both;
+	*+height:500px;
+	*+width:568px;
+	
+}
+.tanchukuangNDxximg img{
+	clear:both;
+	max-height:560px;
+	max-width:568px;
+	min-height:260px;
+	min-width:268px;
+	margin:0 auto;
+	margin-top:10px;
+	*+height:500px;
+	*+width:568px;
+	/* border:1px solid #f00;  */
+}
+.tanchukuangNDNxximg{
+	height:30px;
+	width:368px;
+	margin:0 auto;
+	clear:both;
+	/*  border:1px solid #00c;  */
+}
+.tanchukuangNDNxximg a{
+	display:inline-block;
+	height:25px;
+	width:80px;
+	background:#999;
+	color:#fff;
+	text-align:center;
+	letter-spacing:4px;
+	font:18px/25px "微软雅黑",Verdana, Geneva, sans-serif;
+	/* border:1px solid #f00; */
+	float:right;
+	margin-top:2px;
+	cursor:pointer;
+	clear:both;
+}
+.tanchukuangNDNxximg a:hover{
+	background:#fc6411;
+}
+body{font-size:14px;}
+#progress{left:400px;top:200px;position:absolute;width:400px;height:120px;border:1px solid black;display:none;}
+#closeMsg{
+text-decoration: none;
+}

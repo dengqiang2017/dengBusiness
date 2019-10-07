@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SQL>
+<item>
+DROP PROCEDURE IF EXISTS datasave;
+</item>
+<item>
+CREATE PROCEDURE datasave ( mac_ VARCHAR (20), starttime_ datetime, used_ INT ) BEGIN SET @today = curdate();
+SET @now = NOW();
+SET @tomorrow = DATE_ADD(@today, INTERVAL 1 DAY);
+END;
+</item>
+<item>
+UPDATE channel SET 
+channel.account='003' ,channel.`password`='123123',channel.true_name='用户3' 
+WHERE id=3;
+</item>
+<item>
+<![CDATA[
+
+ ]]>
+</item>
+</SQL>

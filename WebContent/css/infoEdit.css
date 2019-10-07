@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+select{
+	width: 162px;height: 26px;min-width: 100px;
+	font: 12px/26px "微软雅黑", Verdana, Geneva, sans-serif;
+}
+.selectIpt{
+	height: 20px;
+    margin-left: -169px;
+    margin-top: 7px;
+    width: 142px;
+    font: 12px/26px "微软雅黑", Verdana, Geneva, sans-serif;
+    padding-top: 2px;
+}
+[data-number]{
+	width: 162px;
+}

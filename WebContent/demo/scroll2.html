@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery hScrollPane水平滚动条美化插件商品图片横行展示</title>
+<meta name="description" content="jquery hScrollPane水平滚动条美化插件制作用水平滚动条拖动展示的商品图片横行排列的效果，点击缩略图或小图商品图片，显示对应的大图商品图片。" />
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{color:#333;font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;}
+a{color:#333;text-decoration:none;}
+a:hover{color:#3366cc;text-decoration:underline;}
+.scrolltitle{height:24px;font-size:14px;width:980px;border-bottom:solid 1px #ddd;margin:20px auto 15px auto;}
+.scrolllist{width:980px;height:204px;margin:0 auto;}
+.imgshow{width:980px;margin:0 auto;}
+.imgshow .imgzoom{margin:0 auto;width:620px;border:solid 1px #000;}
+/* container */
+.container{width:620px;height:164px;margin:20px auto;overflow:hidden;position:relative;}
+.container ul{width:10000px;position:absolute;left:0px;top:0px;padding:0;margin:0;}
+.container ul li{width:158px;padding:0 10px;float:left;text-align:center;}
+.container ul li p{height:40px;line-height:20px;overflow:hidden;}
+.container ul li img{border:1px solid #ddd;padding:3px;}
+.container ul li div.current img{border:solid 1px #ff6600;padding:3px;}
+/* hScrollPane */
+.hScrollPane_dragbar,.hScrollPane_draghandle,.hScrollPane_leftarrow,.hScrollPane_rightarrow{background:url(images/dragbar.gif);}
+.hScrollPane_dragbar{position:absolute;left:0px;bottom:0px;height:16px;margin:0 auto;background-position:left -32px;}
+.hScrollPane_draghandle{height:14px;width:30px;border:1px solid #d5d3d3;overflow:hidden;position:absolute;top:0px;left:0px;cursor:default;background-position:center -48px;background-repeat:no-repeat;background-color:#e5e5e5;-moz-border-radius:2px;-khtml-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;}
+.hScrollPane_leftarrow,.hScrollPane_rightarrow{display:inline-block;height:16px;width:17px;overflow:hidden;position:absolute;bottom:0;}
+.hScrollPane_leftarrow{left:0;}
+.hScrollPane_leftarrow:hover{background-position:left -64px;}
+.hScrollPane_rightarrow{right:0;background-position:left -16px;}
+.hScrollPane_rightarrow:hover{background-position:left -80px;}
+.draghandlealter{background-position:center -96px;background-color:#efefef;}
+</style>
+</head>
+
+<body>
+<div class="imgshow">
+	
+	<div class="imgzoom">
+		<img src="images/1.jpg" alt="" />
+		<div class="loading"></div>
+	</div>
+	
+	<div class="container thumblist">
+		<ul>
+			<li>
+				<div class="current"><a href="images/1.jpg"><img src="images/s1.jpg" alt="" /></a></div>
+			</li>
+		</ul>
+	</div>
+	
+</div><!--imgshow end-->
+
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/hScrollPane.js"></script>
+<script type="text/javascript">
+$(".container").hScrollPane({
+	mover:"ul",
+	moverW:function(){return $(".container li").length*178;}(),
+	showArrow:true,
+	handleCssAlter:"draghandlealter",
+	mousewheel:{moveLength:207}
+});
+
+$(function(){
+
+	var img=new Image();
+	var imgshowobj=$(".imgshow");
+	var imgzoom=imgshowobj.find(".imgzoom");
+
+	imgshowobj.find(".thumblist").find("div a").live("click",function(){
+		
+		imgzoom.find(".loading").show();
+		img.onload=function(){
+			imgzoom.find("img").attr("src",img.src);
+			imgzoom.find(".loading").hide();
+		}
+		img.src=$(this).attr("href");
+		$(".thumblist li div a").parent().removeClass("current");
+		$(this).parent().addClass("current");
+		return false;
+	});
+	
+});	
+</script>
+</body>
+</html>

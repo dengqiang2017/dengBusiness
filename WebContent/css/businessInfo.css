@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+input{
+width: 225px;
+font-size: 14px;
+}
+.business_ul{
+	font-size: 14px;
+	margin-left: 150px;
+	line-height: 35px;
+}

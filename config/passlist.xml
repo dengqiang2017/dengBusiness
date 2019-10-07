@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<REQUEST>  
+<!-- 需要直接放行的请求列表 -->
+<!-- 获取机器码 -->
+<item url="/business/getMac.do"/>
+<item url="/business.do"/>
+<item url="/business/checkLogin.do"/>
+<item url="/business/saveBusiness.do"/>
+<item url="/business/register.do"/>
+<item url="/business/checkData.do"/>
+<item url="/login/loginAjax.do"/>
+<item url="/upload/uploadImage.do"/>
+<item url="/publishInfo.do"/>
+</REQUEST>
